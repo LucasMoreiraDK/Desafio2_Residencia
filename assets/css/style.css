@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&display=swap');
+
+
+body {
+    background-color: #081b29;
+    color: #fff;
+    font-family: poppins , sans-serif;
+  }
+
+  header {
+    background-color: #081b29;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  nav ul li a:hover {
+    background-color: #333;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #081b29;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .image-text-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-text-container img {
+    width: 200px;
+    height: auto; 
+    border-radius: 50%;
+  }
+  
+  .text-container {
+     /* margin-left: 20px;*/
+  }
+  
+  .textoAzul{
+    color: #00abf0;
+    font-size:xx-large;
+  }
+
+
+  .buttonLinkedin{
+    margin-right: 115px;
+  }
+
+  .buttonLinkedin:hover{
+    background: #081b29;
+  }
+
+  .buttonGithub:hover{
+    background: #081b29;
+  }
+
+  .card:hover{
+    transition: transform 1s ease;
+    transform: scale(1.05);
+    position: relative;
+    z-index: 1;
+
+  }
+
+  .logoRodape {
+    width: 50px; 
+    height: auto; 
+    
+  }
+
+  .espaco{
+    margin-right: 90px;
+  }
+
+  .nav-item.active .nav-link {
+    font-weight: bold;
+    background-color: yellow;
+  }
+  
+ .LinkContatos{
+  text-decoration: none;
+ }
+
+.gitlink:hover{
+  color: #6660C1;
+ }
+
+.instalink:hover{
+
+  color: #f5cf2380;
+}
+
+.linkedlink:hover{
+  color: #2B72A9;
+}
+
+
+
+
+.linksRedes{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-bottom: 100px;
+}
+
+.formularioEmail{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-bottom: 150px;
+ 
+}
+
+.apresentacaoMain{
+  display: flex;
+  justify-content: center; 
+}
+
+.EspacoVertical{
+  padding-bottom: 200px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid blue;
+}

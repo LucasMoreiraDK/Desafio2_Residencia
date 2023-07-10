@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/formacao.html">Formação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/experienciaProfissional.html">Experiencia Profisional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../Pages/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/Contatos.html">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="text-container">
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Instagram</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" controls>
+                <source src="../assets/Video/instagram.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+              </video>
+            </div>
+            <p class="card-text">Como criador do frontend do Instagram, transformei a maneira como as pessoas compartilham fotos e vídeos, criando uma interface envolvente e intuitiva que revolucionou a indústria de mídia social.</p>
+            <p class="card-text">Tecnologias usadas:</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#htmlModal">HTML</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cssModal">CSS</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ali Express</h5>
+              <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" controls>
+                   <source src="../assets/Video/aliexpress.mp4" type="video/mp4">
+                   Seu navegador não suporta a tag de vídeo.
+              </video>
+            </div>
+            <p class="card-text">Como criador do frontend do AliExpress, transformei a experiência de compras online, criando uma interface intuitiva e atrativa que conecta milhões de compradores e vendedores em todo o mundo.</p>
+            <p class="card-text">Tecnologias usadas:</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#htmlModal">HTML</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cssModal">CSS</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jsModal">JAVA SCRIPT</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bsModal">BOOTSRAP</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">YouTube</h5>
+              <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" controls>
+                   <source src="../assets/Video/youtube.mp4" type="video/mp4">
+                   Seu navegador não suporta a tag de vídeo.
+              </video>
+            </div>
+            <p class="card-text">Como criador do frontend do YouTube, revolucionei a forma como as pessoas assistem e interagem com vídeos online, criando uma interface intuitiva e envolvente que conecta bilhões de usuários em todo o mundo.</p>
+            <p class="card-text">Tecnologias usadas:</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#htmlModal">HTML</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cssModal">CSS</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jsModal">JAVA SCRIPT</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bsModal">BOOTSRAP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ABAIXO SÃO OS MODAIS -->
+
+<!-- MODAL HTML -->
+<div class="modal fade text-white" id="htmlModal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog-dark" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="htmlModalLabel">O que é HTML?</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>HTML (HyperText Markup Language) é a linguagem de marcação padrão utilizada para criar a estrutura e o conteúdo de páginas da web. Com o HTML, podemos definir elementos como cabeçalhos, parágrafos, imagens, links e muito mais.</p>
+        <p>Os elementos HTML são organizados em uma árvore hierárquica chamada DOM (Document Object Model). Cada elemento pode ter atributos que fornecem informações adicionais sobre eles, como identificadores, classes, estilos, entre outros.</p>
+        <p>Combinado com CSS (Cascading Style Sheets) para estilização e JavaScript para interatividade, o HTML é uma parte fundamental para o desenvolvimento de páginas da web modernas e responsivas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL CSS -->
+<div class="modal fade text-white" id="cssModal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog-dark" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cssModalLabel">O que é CSS?</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência e o layout dos elementos HTML em uma página da web. Ele controla cores, fontes, tamanhos, </p>
+        <p>margens e outros aspectos visuais dos elementos, permitindo que você personalize o design do seu site de acordo com suas preferências. É uma parte essencial do </p>
+        <p>desenvolvimento web para criar páginas visualmente atraentes e bem organizadas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL JS -->
+<div class="modal fade text-white" id="jsModal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog-dark" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jsModalLabel">O que é JavaScript?</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>JavaScript é uma linguagem de programação usada para adicionar interatividade e funcionalidades em sites. Com ela, é possível manipular elementos da página, responder a </p>
+        <p>eventos e criar recursos dinâmicos. É amplamente utilizado no desenvolvimento web e suportado por todos os principais navegadores.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL F-BS -->
+<div class="modal fade text-white" id="bsModal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog-dark" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bsModalLabel">O que é bootstrap?</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bootstrap é um framework popular para desenvolvimento web que facilita a criação de sites responsivos e estilizados. Ele oferece uma variedade de estilos e componentes pré-definidos, </p>
+        <p>como botões, formulários e grades, que podem ser facilmente integrados em projetos. O Bootstrap também inclui recursos avançados, como navegação responsiva e carrosséis.</p>
+        <p>Com o Bootstrap, desenvolvedores podem economizar tempo e esforço ao criar interfaces atraentes e compatíveis com diferentes dispositivos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACIMA SÃO OS MODAIS -->
+
+
+
+  </main>
+
+  <footer>
+    <div><a href="https://github.com/LucasMoreiraDK" target="_blank"><img src="../assets/img/github.png" class="logoRodape"></a><a href="https://www.instagram.com/lcs_moreira127/" target="_blank"><img src="../assets/img/instagram.png" class="logoRodape"></a><a href="https://www.linkedin.com/in/lucas-moreira-745a691a1" target="_blank"><img src="../assets/img/linkedin.png" class="logoRodape"></a></div>
+    <p>&copy; 2023 - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
