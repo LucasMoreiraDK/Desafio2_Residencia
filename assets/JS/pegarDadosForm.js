@@ -19,8 +19,8 @@ function handleSubmit(event) {
   localStorage.setItem('mensagem', mensagem);
 
   // Exibe uma mensagem de confirmação
-  alert('Dados do formulário armazenados com sucesso!');
-  alert(nome+email+mensagem);
+  alert('Dados do formulário enviados com sucesso!');
+  //alert(nome+email+mensagem);
 
 }
 
