@@ -13,19 +13,39 @@ function handleSubmit(event) {
   const email = document.getElementById('textoEmailForm').value;
   const mensagem = document.getElementById('textoMessageForm').value;
 
-  // Armazena os valores no localStorage
-  localStorage.setItem('nome', nome);
-  localStorage.setItem('email', email);
-  localStorage.setItem('mensagem', mensagem);
+  // Verifica se todos os campos estão preenchidos
+  if (nome && email && mensagem) {
+    // Cria um objeto com os valores do formulário
+    const dadosFormulario = {
+      nome: nome,
+      email: email,
+      mensagem: mensagem
+    };
 
-  // Exibe uma mensagem de confirmação
-  alert('Dados do formulário enviados com sucesso!');
-  //alert(nome+email+mensagem);
+    // Verifica se já existem dados no Local Storage
+    let dadosArmazenados = localStorage.getItem('dadosFormularios');
+    if (dadosArmazenados) {
+      dadosArmazenados = JSON.parse(dadosArmazenados);
+    } else {
+      dadosArmazenados = [];
+    }
 
+    // Adiciona os novos dados ao array
+    dadosArmazenados.push(dadosFormulario);
+
+    // Armazena o array no Local Storage
+    localStorage.setItem('dadosFormularios', JSON.stringify(dadosArmazenados));
+
+    // Exibe uma mensagem de confirmação
+    alert('Dados do formulário enviados com sucesso!');
+
+    // Limpa os campos do formulário
+    formulario.reset();
+  } else {
+    // Exibe uma mensagem de erro
+    alert('Por favor, preencha todos os campos do formulário.');
+  }
 }
 
 // Adiciona um ouvinte de evento para o envio do formulário
-formulario.addEventListener('submit', handleSubmit);
-
-
-
+botaoEnviar.addEventListener('click', handleSubmit);

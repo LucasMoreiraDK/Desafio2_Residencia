@@ -4,6 +4,8 @@
     cards.forEach(card => {
       card.remove();
     });
+    localStorage.removeItem('dadosFormularios');
+
   }
 
   // Captura o botão pelo seletor de classe
@@ -11,3 +13,9 @@
 
   // Adiciona um ouvinte de evento para o clique no botão
   botaoExcluirCards.addEventListener('click', excluirCards);
+
+
+  
+
+
+

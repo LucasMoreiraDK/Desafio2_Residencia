@@ -1,34 +1,32 @@
-// Função para receber os dados do localStorage e adicionar aos cards
-function receberDados() {
-    // Recupera os valores armazenados no localStorage
-    const nomeArmazenado = localStorage.getItem('nome');
-    const emailArmazenado = localStorage.getItem('email');
-    const mensagemArmazenada = localStorage.getItem('mensagem');
-  
-    // Verifica se os valores estão presentes no localStorage
-    if (nomeArmazenado && emailArmazenado && mensagemArmazenada) {
-      // Cria um novo card
+  // Recupera os dados do Local Storage
+  const dadosArmazenados = localStorage.getItem('dadosFormularios');
+  const dados = JSON.parse(dadosArmazenados);
+
+  // Verifica se existem dados no Local Storage
+  if (dados && dados.length > 0) {
+    // Itera sobre os dados e cria os cards
+    dados.forEach((dadosFormulario) => {
       const novoCard = document.createElement('div');
       novoCard.classList.add('card', 'cardDynamicCriado');
-      novoCard.innerHTML = `
-        <div class="card-body">
-          <h5 class="card-title">Nome: ${nomeArmazenado}</h5>
-          <p class="card-text">Email: ${emailArmazenado}</p>
-          <p class="card-text">Mensagem: ${mensagemArmazenada}</p>
-        </div>
+
+      const cardBody = document.createElement('div');
+      cardBody.classList.add('card-body');
+
+      // Adiciona os dados ao card
+      cardBody.innerHTML = `
+        <h5 class="card-title">Nome: ${dadosFormulario.nome}</h5>
+        <p class="card-text">Email: ${dadosFormulario.email}</p>
+        <p class="card-text">Mensagem: ${dadosFormulario.mensagem}</p>
       `;
-  
-      // Adiciona o novo card ao card-group "cardForms"
-      const cardForms = document.querySelector('.cardForms');
-      cardForms.appendChild(novoCard);
-  
-      // Remove os dados do localStorage (Se não remover o dado vai se repetir)
-      localStorage.removeItem('nome');
-      localStorage.removeItem('email');
-      localStorage.removeItem('mensagem');
-    }
+
+      novoCard.appendChild(cardBody);
+
+      // Adiciona o novo card à div de respostas do formulário
+      const respostasForm = document.querySelector('.respostasForm');
+      respostasForm.appendChild(novoCard);
+    });
+  } else {
+    // Caso não haja dados no Local Storage
+    const respostasForm = document.querySelector('.respostasForm');
+    respostasForm.textContent = 'Nenhuma requisição do formulário encontrada.';
   }
-  
-  // Executa a função receberDados a cada meio segundo
-  setInterval(receberDados, 500); // (500 ms)
-  
