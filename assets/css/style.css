@@ -147,3 +147,8 @@ body {
 .navbar-nav .nav-item .nav-link.active {
   border-bottom: 2px solid blue;
 }
+
+.cardDynamicCriado{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

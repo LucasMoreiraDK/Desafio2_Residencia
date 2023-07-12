@@ -35,6 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="../Pages/Contatos.html">Contatos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../Pages/requisicoesForm.html">Ver mensagens</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,6 +48,17 @@
     <div class="container text-center">
       <h3>Respostas do Formulário da página do portfólio </h3>
       <p>Abaixo:</p>
+      <div class="addDadosForm"></div>
+      <button class="receberDados btn btn-primary">Receber Dados</button>
+      <button onclick="excluirCards()" class="btn btn-primary">Apagar Dados</button>
+
+      <div class="card-group d-flex justify-content-center align-items-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="cardForms"></div>
+          </div>
+        </div>
+      </div>
     </div>
     
   </main>
@@ -55,6 +69,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/JS/excluirCardsForm.js"></script>
+  <script src="../assets/JS/addCardsForms.js"></script>
 </body>
 
+
+
+
+<!-- LEMBRAR DE FAZER ALGO COMO WHILE TRUE PARA PEGAR AS REQUISIÇÕES SEM PRECISAR DO BOTÃO , POIS  -->
 </html>
+
+
