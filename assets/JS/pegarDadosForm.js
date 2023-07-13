@@ -5,7 +5,7 @@ const formulario = document.querySelector('form');
 const botaoEnviar = document.querySelector('button[type="submit"]');
 
 // Função para lidar com o envio do formulário
-function handleSubmit(event) {
+function PegarDados(event) {
   event.preventDefault(); // Evita o envio do formulário
 
   // Captura os valores dos campos
@@ -48,4 +48,4 @@ function handleSubmit(event) {
 }
 
 // Adiciona um ouvinte de evento para o envio do formulário
-botaoEnviar.addEventListener('click', handleSubmit);
+botaoEnviar.addEventListener('click', PegarDados);
